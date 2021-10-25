@@ -1,0 +1,481 @@
+header
+  position: relative
+  height: 50px
+
+  
+
+nav
+  position: fixed
+  width: 100%
+  height: 50px
+  background-color: #212121
+  z-index: 3
+
+  
+.hamburger
+  display: none
+  
+.menu
+  display: flex
+  justify-content: space-between
+  padding: 13px 70px
+  margin: 0
+  list-style-type: none
+
+  &_link
+    color: #ffffff
+    font-size: 15px
+    font-weight: 300
+    text-decoration: none
+    
+    
+  &_item
+    border-right: 2px dotted black
+    padding-right: 28px
+    &:last-child
+      border-right: none /** убирает последнюю палочку с макета **/
+    
+
+
+.subheader
+  position: absolute
+  top: 50px
+  width: 100%
+  height: 84px
+  background-color: rgba(0, 0, 0, 0.6)
+  &_logo
+      display: block
+      max-width: 100%
+      margin-top: 16px
+
+  &_official
+      margin-top: 6px
+      opacity: 0.5
+      color: #ffffff
+      font-size: 13px
+      font-weight: 400
+
+  &_call
+      color: #ffffff
+      font-size: 12px
+      font-weight: 300
+      margin-top: 19px
+      text-align: right
+  &_phone
+      display: block
+      margin-top: 8px
+      color: #ffffff
+      font-size: 22px
+      font-weight: 400
+      text-transform: uppercase
+      text-align: right
+      line-height: 12px
+      text-decoration: none
+  &_btn
+      margin-top: 19px
+      width: 172px
+      height: 46px
+      box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+      border: none
+      border-radius: 4px
+      background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+      color: #ffffff
+      font-size: 14px
+      font-weight: 400
+      text-transform: uppercase
+      @include btn_hover
+
+  
+    
+
+
+
+
+.promo
+  min-height: 925px
+  
+  background: url('img/background/uber_bg.png') center (center / cover) no-repeat
+  padding: 150px 0 135px 0
+
+  &_header
+    color: #ffffff
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 60px
+    line-height: 60px
+    margin: 0
+    text-align: center
+
+  &_subheader
+    color: #ffffff
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 36px
+    line-height: 36px
+    margin: 0
+    margin-top: 22px
+    text-align: center
+
+  &_descr
+    color: #ffffff
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+    text-align: center
+    margin-top: 23px
+
+  &_btn
+      display: block
+      margin: 118px auto 0 auto
+      width: 259px
+      height: 63px
+      box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
+      border: none
+      border-radius: 4px
+      background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+      color: #ffffff
+      font-size: 18px
+      font-weight: 400
+      text-transform: uppercase
+      @include btn_hover
+
+.reasons
+  padding: 71px 0 65px 0
+  &_block
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 35px
+
+  &_round
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 26px
+    width: 113px
+    height: 113px
+    background-color: #1eacc7
+    border-radius: 100%
+
+  &_descr
+    width: 343px
+
+  &_subtitle
+    line-height: 21px
+    color: #1eacc7
+    font-size: 17px
+    font-weight: 400
+
+  &_text
+    color: #202020
+    font-size: 15px
+    font-weight: 300
+    line-height: 21px
+
+.label
+  margin: 0 auto
+  height: 24px
+  width: 112px
+  padding: 5px 12px
+  background-color: #000000
+  color: #ffffff
+  font-size: 11px
+  font-weight: 300
+  text-transform: uppercase
+  text-align: center
+  &:hover
+    text-decoration: none
+    cursor: pointer
+    
+
+.title
+  margin-bottom: 0
+  margin-top: 38px
+  color: #222222
+  font-size: 38px
+  font-weight: 700
+  text-transform: uppercase
+  text-align: center
+
+.subtitle
+    font-weight: normal
+    font-size: 17px
+    text-align: center
+    color: #222222
+
+
+
+
+.mobile
+    min-height: 864px
+    padding: 48px 0 80px 0
+    background: url('img/background/mobile_bg.png')  center (center/cover) no-repeat
+    .row
+      margin-top: 30px  /** Позволяет отодвинуть только от вверхнего заголовка **/
+    &_item
+      position: relative
+      width: 320px
+      height: 280px
+      margin: 0 auto
+      margin-bottom: 19px
+      padding-top: 92px
+      &_1
+        background: url('img/cards/Карточка1.png') center (center/cover) no-repeat
+        
+      &_2
+        background: url('img/cards/Карточка2.png') center (center/cover) no-repeat
+      &_3
+        background: url('img/cards/Карточка3.png') center (center/cover) no-repeat
+      &_4
+        background: url('img/cards/Карточка4.png') center (center/cover) no-repeat
+      &_5
+        background: url('img/cards/Карточка5.png') center (center/cover) no-repeat
+      &_6
+        background: url('img/cards/Карточка6.png') center (center/cover) no-repeat
+      &_subtitle
+        font-size: 24px
+        line-height: 31px
+        text-transform: uppercase
+        color: #FFFFFF;
+        text-align: center
+      &_plus
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        bottom: 35px
+        left: 50%
+        transform: translateX(-50%) /** Поскольку 50% Лефт не учитывает ширину самого обьекта (картинки) свойство Трансформ позволяет сдвинуть обьект так что бы он оказался ровно по центру **/
+        width: 26px
+        height: 26px
+        background: #000000
+        margin: 0 auto
+        border-radius: 100%
+        cursor: pointer
+        &::before
+          content: ''
+          display: block
+          width: 14px
+          height: 2px
+          background-color: #1EACC7
+          transition: 1s all
+        &::after
+          content: ''
+          position: absolute
+          transform: translate(x)-50% /** позволяет выровнять обьект по центру **/
+          display: block
+          width: 2px
+          height: 14px
+          background-color: #1EACC7
+          transition: 1s all
+        &:hover
+          &::before, &::after
+            background-color: #052e86
+            
+
+.choise 
+  position: relative
+  min-height: 896px
+  background: url('img/background/mobile_bg.png')  center (center/cover) no-repeat
+  padding: 55px 0 138px 0
+  &_img
+    display: block
+    position: relative
+    margin: 0 auto
+    z-index: 2
+    padding-top: 54px
+    
+  .black
+    position: absolute
+    top: 0
+    left: 0
+    height: 499px
+    width: 100%
+    background-color: black
+    z-index: 1
+  .label
+    position: relative
+    background-color: #ffffff
+    color: black
+    z-index: 1
+  .title
+    position: relative
+    color: white
+    z-index: 1
+  .subtitle
+    position: relative
+    color: white
+    z-index: 1
+  
+  .sub_text
+    position: relative
+    font-weight: 300
+    font-size: 20px
+    line-height: 24px
+    text-align: center
+    color: #222222
+    z-index: 1
+
+.require
+  padding: 68px 0 87px 0      
+  &_block
+    margin: 33px 0 
+    &_mnb
+      margin-bottom: 0px /** Отступа снизу удвух последних обьктов нету **/
+  &_title
+    font-size: 22px
+    display: flex
+    align-items: center
+    color: #1CA8C3
+  &_list
+    list-style: none /** Убирает кружочки со списка **/
+    padding-left: 50px
+    margin-top: 20px
+    li
+      position: relative
+      font-weight: 300
+      font-size: 17px
+      color: #222222
+      margin-bottom: 5px
+      &::before
+        content: ''
+        position: absolute
+        left: -32px
+        top: 10%
+        transform: translateY() 50%
+        display: inline-block   /** Flex не работает на псевдоклассы и элементы **/
+        /** vertical-align: middle
+        /** transform: translate(-13px , -3px) **/  /** Позволяет сдвинуть галочки по осям х  и y  **/
+        width: 21px
+        height: 20px
+        background: url(icons/galo4ki/check_blue7.png) center (center / cover) no-repeat
+  &_descr
+    font-size: 17px
+    color: #1CA8C3
+  .warning
+    .require_title  /** Такая запись позволяет перезаписывать информацию в обьектах **/
+      color: red
+    .require_list
+        li
+          &::before
+            background: url(icons/galo4ki/Layer31copy7.png)  center (center / cover) no-repeat
+
+
+.world
+  position: relative
+  min-height: 720px
+  background: url(/src/img/background/world_bg.png) center no-repeat 
+  background-color: #080811
+  padding: 48px 0 1px 0
+  .container
+    margin-top: 48px
+    
+  .label
+    background-color: white
+    color: black
+    
+  .title
+    color: white
+  .subtitle
+    color: white
+  .cities
+    display: flex
+    justify-content: center
+    position: absolute
+    bottom: 51px
+    left: 50%
+    transform: translateX(-50%) /** Так же выравнивает текст по центру **/
+    
+    font-weight: 400px
+    font-size: 18px
+    text-align: center
+    text-transform: uppercase
+    color: #1FBAD6
+    text-decoration: none
+    &:hover
+      text-decoration: none
+      color: #11d7ff
+      transition: 1s all
+footer
+  .footer_divider
+    position: relative
+    width: 307px
+    height: 7px
+    background-color: #1FBAD6
+    margin: 0 auto
+    margin-top: 10px
+  .social_links
+    display: flex
+    position: absolute
+    margin-top: 45px
+    left: 40px
+    width: 160px
+    justify-content: space-between
+    
+  .wrapper_social
+    
+    position: relative
+    width: 35px
+    height: 35px
+    background-color: black
+    border-radius: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    i
+      color: white
+      
+    
+  .footer_links
+    width: 391px
+    margin: 0 auto 
+    margin-top: 31px
+    
+    .footer_links_main
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      padding: 0 10px
+
+      a
+        font-weight: 300px
+        font-size: 15px
+        text-transform: uppercase
+        color: #070716
+        text-decoration: none
+      
+    &_secondary
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      margin-top: 10px
+
+      a
+        
+        font-weight: 300
+        font-size: 11px
+        text-transform: uppercase
+        color: #999999
+        text-decoration: none
+    .language
+      display: flex
+      justify-content: center
+      margin-top: 15px
+      
+      font-style: normal
+      font-weight: normal
+      font-size: 11px
+      text-transform: uppercase
+      color: #1FBAD6
+      text-decoration: none
+  .download
+    position: relative
+    &_img
+      position: absolute
+      right: 59px
+      top: 40px
+
+.xs-visible 
+	display: none
