@@ -115,7 +115,7 @@ nav {
 
 .promo {
   min-height: 925px;
-  background: url("/Src/img/background/uber_bg.png") center center/cover no-repeat;
+  background: url(/img/background/uber_bg.png) center center/cover no-repeat;
   padding: 150px 0 135px 0;
 }
 
@@ -464,7 +464,7 @@ nav {
   /** Позволяет сдвинуть галочки по осям х  и y  **/
   width: 21px;
   height: 20px;
-  background: url(/src/icons/galo4ki/check_blue7.png) center center/cover no-repeat;
+  background: url(/icons/galo4ki/check_blue7.png) center center/cover no-repeat;
 }
 
 .require_descr {
@@ -477,13 +477,13 @@ nav {
 }
 
 .require .warning .require_list li::before {
-  background: url(/src/icons/galo4ki/Layer31copy7.png) center center/cover no-repeat;
+  background: url(/icons/galo4ki/Layer31copy7.png) center center/cover no-repeat;
 }
 
 .world {
   position: relative;
   min-height: 720px;
-  background: url(/src/img/background/world_bg.png) center no-repeat;
+  background: url(/img/background/world_bg.png) center no-repeat;
   background-color: #080811;
   padding: 48px 0 1px 0;
 }
